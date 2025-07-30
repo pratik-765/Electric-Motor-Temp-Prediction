@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Motor Temperature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Electric Motor Temperature</h1>
+    </div>
+
+    <div class="container">
+        <h2>Electric Motor Temperature Prediction</h2>
+        <p class="subtitle">Fill in and below details to know predicted Permanent Magnet surface temperature representing the rotor temperature.</p>
+
+        <div id="output" class="output-text"></div>
+
+        <form id="tempForm">
+            <input type="number" placeholder="Ambient temperature" name="ambient" required>
+            <input type="number" placeholder="Coolant temperature" name="coolant" required>
+            <input type="number" placeholder="Voltage d-component" name="voltage_d" required>
+            <input type="number" placeholder="Voltage q-component" name="voltage_q" required>
+            <input type="number" placeholder="Motor speed" name="speed" required>
+            <input type="number" placeholder="Current d-component" name="current_d" required>
+            <input type="number" placeholder="Current q-component" name="current_q" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
